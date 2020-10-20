@@ -90,17 +90,17 @@ app.setHandler({
       this.$session.$data.retryAddFilter = false;
     },
     LocationOfAirFilterIntent() {
-      this.$user.$data.location = this.$inputs.location.value;
+      this.$session.$data.location = this.$inputs.location.value;
       this.ask(this.t('WHAT_IS_THE_WIDTH_AND_HEIGHT'), this.t('WHAT_IS_THE_WIDTH_AND_HEIGHT_REPROMPT'))
     },
     SizeOfAirFilterIntent() {
-      this.$user.$data.width = this.$inputs.width.value;
-      this.$user.$data.height = this.$inputs.height.value;
+      this.$session.$data.width = this.$inputs.width.value;
+      this.$session.$data.height = this.$inputs.height.value;
 
       let airFilter = {
-        width: this.$user.$data.width,
-        height: this.$user.$data.height,
-        location: this.$user.$data.location
+        width: this.$session.$data.width,
+        height: this.$session.$data.height,
+        location: this.$session.$data.location
       }
       this.$session.$data.newAirFilter = airFilter
       this.ask(this.t('AIR_FILTER_CONFIRMATION', airFilter), this.t('AIR_FILTER_CONFIRMATION_REPROMPT'));
