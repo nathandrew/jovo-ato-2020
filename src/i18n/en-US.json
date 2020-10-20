@@ -1,0 +1,27 @@
+{
+  "translation": {
+    "WELCOME": "Welcome to Airy!  I help you remember to change your air filters in your home.  Would you like to record a change?",
+    "WELCOME_REPROMPT": "Would you like to record a change?",
+    "AIR_FILTER_CHANGE_RECORDED": "Great!  I have saved that for your records.",
+    "SAVE_AIR_FILTERS": "OK. Would you like to add some air filter sizes to remember for next time?",
+    "YOU_LAST_CHANGED": "You last changed your air filter {{time}}",
+    "YOU_NEVER_CHANGED": "You have not recorded a change yet.  Would you like to now?",
+    "YOU_NEVER_CHANGED_REPROMPT": "Would you like to record a change now?",
+    "OOPS": "Oops. Looks like air filters are tricky.",
+    "OK_GOODBYE": "OK, goodbye!",
+    "WHERE_IS_AIR_FILTER_LOCATED": "Which room is the air filter located?",
+    "WHERE_IS_AIR_FILTER_LOCATED_REPROMPT": "Which room is the air filter located?",
+    "WHAT_IS_THE_WIDTH_AND_HEIGHT": "What is the width and height of the filter in inches",
+    "WHAT_IS_THE_WIDTH_AND_HEIGHT_REPROMPT": "What is the width and height of the filter in inches",
+    "AIR_FILTER_CONFIRMATION": "This filter is in your {{location}} and is {{width}} inches by {{height}} inches.  Is that correct?",
+    "AIR_FILTER_CONFIRMATION_REPROMPT": "Is that good?",
+    "SORRY": "Sorry about that.",
+    "ADD_ANOTHER": "Great! Would you like to add another air filter?",
+    "ADD_ANOTHER_REPROMPT": "Would you like to add another air filter?",
+    "NO_AIR_FILTERS": "Looks like you do not have any air filters.  Would you like to add some?",
+    "NO_AIR_FILTERS_REPROMPT": "Would you like to add some?",
+    "LIST_AIR_FILTERS": "Here's a list of your air filters:",
+    "AIR_FILTER_ITEM": "{{location}} that is {{width}} inches by {{height}} inches,",
+    "LIST_AIR_FILTERS_ENDING": ",Hopefully that is helpful because that is the sole reason for my existence."
+  }
+}
