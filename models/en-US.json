@@ -2,11 +2,99 @@
 	"invocation": "air filter check",
 	"intents": [
 		{
+			"name": "RecordChangedAirFilterIntent",
+			"phrases": [
+				"My air filters are all new now",
+				"I replaced my air filters with new ones",
+				"I replaced my air filters",
+				"I changed it",
+				"My air filter is changed",
+				"I changed my air filter",
+				"say hello"
+			],
+			"inputs": []
+		},
+		{
 			"name": "LastChangedAirFilterIntent",
 			"phrases": [
-				"last change",
 				"when did I change it last",
-				"say hello world"
+				"When was the last time I changed my air filter",
+				"I replaced my air filters",
+				"I changed it",
+				"My air filter is changed",
+				"I changed my air filter"
+			],
+			"inputs": [
+				{
+					"name": "name",
+					"type": {
+						"alexa": "AMAZON.US_FIRST_NAME",
+						"dialogflow": "@sys.given-name"
+					}
+				}
+			]
+		},
+		{
+			"name": "InformationIntent",
+			"phrases": [
+				"more information",
+				"more information please",
+				"can I get some more information",
+				"more info",
+				"how often should I change my air filter"
+			],
+			"inputs": []
+		},
+		{
+			"name": "LocationOfAirFilterIntent",
+			"phrases": [
+				"next to the {location}",
+				"in the {location}",
+				"the {location}",
+				"{location}",
+				"it is located in our {location}"
+			],
+			"inputs": [
+				{
+					"name": "location",
+					"type": {
+						"alexa": "AMAZON.Room"
+					}
+				}
+			]
+		},
+		{
+			"name": "SizeOfAirFilterIntent",
+			"phrases": [
+				"{width} by {height} inches",
+				"{width} and {height}",
+				"{width} inches and {height} inches",
+				"{width} inches by {height} inches",
+				"it is {width} inches by {height} inches",
+				"{width} by {height}"
+			],
+			"inputs": [
+				{
+					"name": "width",
+					"type": {
+						"alexa": "AMAZON.NUMBER"
+					}
+				},
+				{
+					"name": "height",
+					"type": {
+						"alexa": "AMAZON.NUMBER"
+					}
+				}
+			]
+		},
+		{
+			"name": "ListAirFiltersIntent",
+			"phrases": [
+				"what are they",
+				"list my air filters",
+				"what are my filter sizes",
+				"what are all of my air filter sizes"
 			],
 			"inputs": []
 		}
@@ -34,30 +122,18 @@
 					{
 						"name": "AMAZON.FallbackIntent",
 						"samples": []
+					},
+					{
+						"name": "AMAZON.YesIntent",
+						"samples": []
+					},
+					{
+						"name": "AMAZON.NoIntent",
+						"samples": []
 					}
 				]
 			}
 		}
-	},
-	"dialogflow": {
-		"intents": [
-			{
-				"name": "Default Fallback Intent",
-				"auto": true,
-				"webhookUsed": true,
-				"fallbackIntent": true
-			},
-			{
-				"name": "Default Welcome Intent",
-				"auto": true,
-				"webhookUsed": true,
-				"events": [
-					{
-						"name": "WELCOME"
-					}
-				]
-			}
-		]
 	},
 	"inputTypes": []
 }
